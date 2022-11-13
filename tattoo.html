@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realism Tattoos</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to top,
+          lightgrey 0%,
+          lightgrey 1%,
+          #e0e0e0 26%,
+          #efefef 48%,
+          #d9d9d9 75%,
+          #bcbcbc 100%
+        );
+      }
+      .information {
+        background-image: linear-gradient( #d7d2cc,#304352, #d7d2cc, #304352);
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 20px;
+        border-radius: 7px;
+      }
+      h1 {
+        text-align: center;
+        color: #304352;
+        font-family: 'papyrus', 'fantasy';
+      }
+      h2 {
+        text-align: center;
+        border: 3px solid #3c4b57;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 7px;
+        font-family: 'papyrus', 'fantasy';
+        color: #304352;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color:#181c22;
+        font-family: 'papyrus', 'fantasy';
+        font-weight: bolder;
+      }
+      .Realism{
+        font-family: 'Ink Free';
+      }
+      .first{
+        display: inline-block;
+        margin: 20px 70px auto;
+        background: #304352;
+        color: rgb(223, 223, 223);
+        font-size: 18px;
+        padding: 15px 15px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        transition: all 150ms ease-in-out;
+        font-family: 'Ink Free';
+      }
+      .second{
+         display: inline-block;
+        margin: 20px 70px auto;
+        background: #304352;
+        color: rgb(223, 223, 223);
+        font-size: 18px;
+        padding: 15px 15px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+        font-family: 'Ink Free';
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background:  rgb(223, 223, 223);
+        color: #304352;
+      }
+      br{
+        color: #304352;
+        font-size: 11px;
+      }
+      .coder {
+        margin-top: 10px;
+        text-decoration: none;
+        color: #9c9c9c;
+        font-size: 13px;
+      }
+      .coder:hover {
+        text-decoration: underline;
+      }
+      .built {
+        text-align: center;
+      }
+      .learn{
+        text-decoration: none;
+        color: #304352;
+        font-family: 'papyrus', 'fantasy';
+      }
+    </style>
+  </head>
+  <body>
+    <div class="information">
+      <h1><em>I love Tattoo</em></h1>
+      <h2><em>Especially Realistic Tattoos</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/246/original/Awesome-Angel-Wings-Tattoo-Designs-41.jpg?1661185262"
+        alt="Realistic Tattoo"
+      />
+      <p>
+        <span class="Realism">Realism or Photorealism </span> tattoos are an art style that results in tattoos
+        that are like a photograph or a real-life 3D object. This is a finely
+        tuned art style that takes an epic amount of practice. Photorealism
+        tattoos are great for doing portraits of people or animals, close-ups,
+        detailed features, and eye-popping imagery. Realism and portrait tattoos
+        are one of the fastest-growing and highest-demand tattoo styles.
+      </p>
+      <hr />
+      <p>
+        <span class="Realism">Photorealism tattoos </span> are inspired by the realism art movement from
+        France in the 1850s. This tattoo style takes an extreme eye for detail
+        and patience to perform such intricate layering of fine lines. It is
+        even possible to make tattoos look wet! An expert at realism and
+        portraits can make a tattoo look like an expert drew the artwork on a
+        piece of paper, which is already hard enough!
+      </p>
+      <strong>
+        <a
+          href="https://certifiedtattoo.com/portraits-realism-tattoos"
+          target="_blank"
+          class="learn"
+        >
+          Learn more on Certifiedtattoo
+        </a>
+      </strong>
+    </br>
+      <button class="first"> Go get a tattoo</button> 
+      <button class="second"> I'm not sure yet</button>
+      
+      <p class="built">
+        This page was built by
+        <a
+          href="https://www.shecodes.io/graduates/54514-maria-palamarchuk"
+          target="_blank"
+          class="coder"
+        >
+        <br>
+          Maria Palamarchuk
+        </br>
+        </a>
+      </p>
+    </div>
+    <script>
+      function getTattoo() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?")
+        let age = prompt("How old are you?");
+        if (age <18){
+        alert ("Sorry" +" " + name +"! You cannot get a tattoo yet 😥");
+      }
+      else{
+        alert("Thank you," +" " + name + "! We'll contact you soon")
+      }
+    }
+      function imNotSure(){
+        let name = prompt("What is your name?");
+        alert ("Hello" + " "+ name + "! You can find additional info on Certifiedtattoo");
+      }
+      let firstButton = document.querySelector("button.first");
+      firstButton.addEventListener("click", getTattoo);
+      let secondButton = document.querySelector("button.second");
+      secondButton.addEventListener("click", imNotSure);
+    </script>
+  </body>
+</html>
